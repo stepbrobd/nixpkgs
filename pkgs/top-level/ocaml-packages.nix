@@ -245,6 +245,8 @@ let
 
     cooltt = callPackage ../development/ocaml-modules/cooltt { };
 
+    coqfmt = callPackage ../development/ocaml-modules/coqfmt { };
+
     cow = callPackage ../development/ocaml-modules/cow { };
 
     cpdf = callPackage ../development/ocaml-modules/cpdf { };
