@@ -318,7 +318,7 @@ GEM
     puma (6.3.1)
       nio4r (~> 2.0)
     racc (1.7.1)
-    rack (2.2.8)
+    rack (2.2.8.1)
     rack-mini-profiler (3.1.1)
       rack (>= 1.2.0)
     rack-protection (3.1.0)
@@ -502,7 +502,7 @@ GEM
     xpath (3.2.0)
       nokogiri (~> 1.8)
     yaml-lint (0.1.2)
-    yard (0.9.34)
+    yard (0.9.35)
     zeitwerk (2.6.11)
 
 PLATFORMS
