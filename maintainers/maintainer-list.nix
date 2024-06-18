@@ -707,6 +707,13 @@
     githubId = 45179933;
     name = "Alex Jackson";
   };
+  a-jay98 = {
+    name = "Ali Jamadi";
+    email = "ali@jamadi.me";
+    matrix = "@a.jamadi:matrix.org";
+    github = "a-jay98";
+    githubId = 23138252;
+  };
   ajgrf = {
     email = "a@ajgrf.com";
     github = "ajgrf";
