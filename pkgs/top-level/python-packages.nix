@@ -15486,6 +15486,13 @@ self: super: with self; {
 
   tree-sitter0_21 = callPackage ../development/python-modules/tree-sitter0_21 { };
 
+  tree-sitter-grammars = lib.recurseIntoAttrs (lib.mapAttrs
+    (name: grammarDrv: callPackage ../development/python-modules/tree-sitter-grammars { inherit name grammarDrv; })
+    (lib.attrsets.removeAttrs pkgs.tree-sitter.builtGrammars [
+      # ImportError: /nix/store/7w7piy6hpdj1swdg5r0bz47gk2g3q855-tree-sitter-perl-grammar-0.22.5/parser: undefined symbol: isnumber
+      "tree-sitter-perl"
+    ]));
+
   tree-sitter-html = callPackage ../development/python-modules/tree-sitter-html { };
 
   tree-sitter-python = callPackage ../development/python-modules/tree-sitter-python { };
