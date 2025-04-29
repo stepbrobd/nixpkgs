@@ -46,7 +46,7 @@ GEM
     htmlentities (4.3.4)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
-    json (2.9.1)
+    json (2.11.3)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
@@ -66,7 +66,7 @@ GEM
       mustache (~> 1.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.18.1)
+    nokogiri (1.18.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octicons (19.14.0)
@@ -76,7 +76,7 @@ GEM
       date
       stringio
     racc (1.8.1)
-    rack (3.1.8)
+    rack (3.1.12)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -88,7 +88,7 @@ GEM
       rack (>= 3)
     rdoc (6.11.0)
       psych (>= 4.0.0)
-    rexml (3.4.0)
+    rexml (3.4.1)
     rouge (3.30.0)
     rss (0.3.1)
       rexml
