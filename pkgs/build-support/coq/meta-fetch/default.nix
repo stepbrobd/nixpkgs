@@ -68,7 +68,7 @@ let
           {
             ext = "tar.gz";
             fmt = "tarball";
-            fetchfun = builtins.fetchTarball;
+            fetchfun = throw "still trying to use builtins.fetchTarball on ${owner}/${repo}@${rev}";
           };
     in
     with kind;
