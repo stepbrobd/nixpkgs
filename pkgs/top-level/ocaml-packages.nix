@@ -1186,6 +1186,10 @@ let
 
         merlin-lib = callPackage ../development/tools/ocaml/merlin/lib.nix { };
 
+        metapp = callPackage ../development/ocaml-modules/metapp { };
+
+        metaquot = callPackage ../development/ocaml-modules/metaquot { };
+
         metadata = callPackage ../development/ocaml-modules/metadata { };
 
         metrics = callPackage ../development/ocaml-modules/metrics { };
@@ -1842,6 +1846,8 @@ let
         redis = callPackage ../development/ocaml-modules/redis/default.nix { };
 
         redis-lwt = callPackage ../development/ocaml-modules/redis/lwt.nix { };
+
+        refl = callPackage ../development/ocaml-modules/refl { };
 
         reperf = callPackage ../development/ocaml-modules/reperf { };
 
