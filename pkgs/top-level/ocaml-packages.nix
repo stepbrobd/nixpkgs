@@ -1428,7 +1428,12 @@ let
 
         ocaml_mysql = callPackage ../development/ocaml-modules/mysql { };
 
-        ocaml_oasis = callPackage ../development/tools/ocaml/oasis { };
+        # deprecation notice added on 2025-11-07
+        ocaml_oasis =
+          lib.warn "oasis is considered abandoned by upstream, and will be removed in 26.05 release"
+            callPackage
+            ../development/tools/ocaml/oasis
+            { };
 
         ocaml_pcre = callPackage ../development/ocaml-modules/pcre { };
 
@@ -2240,6 +2245,7 @@ let
 
         buildDunePackage = callPackage ../build-support/ocaml/dune.nix { };
 
+        # see deprecation warning for ocaml_oasis
         buildOasisPackage = callPackage ../build-support/ocaml/oasis.nix { };
 
         buildTopkgPackage = callPackage ../build-support/ocaml/topkg.nix { };
