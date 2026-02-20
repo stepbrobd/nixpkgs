@@ -13,13 +13,13 @@ let
   });
   stdenv = gccStdenv;
 in
-stdenv.mkDerivation rec {
+stdenv.mkDerivation (finalAttrs: {
   pname = "cvc3";
   version = "2.4.1";
 
   src = fetchurl {
-    url = "https://cs.nyu.edu/acsys/cvc3/releases/${version}/${pname}-${version}.tar.gz";
-    sha256 = "1xxcwhz3y6djrycw8sm6xz83wb4hb12rd1n0skvc7fng0rh1snym";
+    url = "https://cs.nyu.edu/acsys/cvc3/releases/${finalAttrs.version}/cvc3-${finalAttrs.version}.tar.gz";
+    hash = "sha256-1VsdYAbPusP21MCGlkVYkCw+0O+masSZz7IZPz7krPc=";
   };
 
   buildInputs = [
@@ -60,4 +60,4 @@ stdenv.mkDerivation rec {
       downloadPage = "https://cs.nyu.edu/acsys/cvc3/download.html";
     };
   };
-}
+})
