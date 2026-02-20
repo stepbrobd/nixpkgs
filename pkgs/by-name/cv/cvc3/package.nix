@@ -1,13 +1,18 @@
 {
   lib,
-  stdenv,
+  gccStdenv,
   fetchurl,
   flex,
   bison,
   gmp,
   perl,
 }:
-
+let
+  gmp' = lib.overrideDerivation gmp (_: {
+    dontDisableStatic = true;
+  });
+  stdenv = gccStdenv;
+in
 stdenv.mkDerivation rec {
   pname = "cvc3";
   version = "2.4.1";
@@ -18,7 +23,7 @@ stdenv.mkDerivation rec {
   };
 
   buildInputs = [
-    gmp
+    gmp'
     flex
     bison
     perl
@@ -28,8 +33,8 @@ stdenv.mkDerivation rec {
 
   # fails to configure on darwin due to gmp not found
   configureFlags = [
-    "LIBS=-L${gmp}/lib"
-    "CXXFLAGS=-I${gmp.dev}/include"
+    "LIBS=-L${gmp'}/lib"
+    "CXXFLAGS=-I${gmp'.dev}/include"
   ];
 
   postPatch = ''
