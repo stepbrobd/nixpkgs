@@ -10320,16 +10320,6 @@ with pkgs;
     ocamlPackages = ocaml-ng.ocamlPackages_4_14;
   };
 
-  mmlgui = callPackage ../applications/audio/mmlgui {
-    libvgm = libvgm.override {
-      withAllEmulators = false;
-      emulators = [
-        "_PRESET_SMD"
-      ];
-      enableLibplayer = false;
-    };
-  };
-
   monotone = callPackage ../applications/version-management/monotone {
     lua = lua5;
   };
