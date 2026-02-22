@@ -6583,12 +6583,6 @@
     githubId = 4951663;
     name = "Morgan Helton";
   };
-  dezgeg = {
-    email = "tuomas.tynkkynen@iki.fi";
-    github = "dezgeg";
-    githubId = 579369;
-    name = "Tuomas Tynkkynen";
-  };
   dezren39 = {
     email = "drewrypope@gmail.com";
     github = "dezren39";
