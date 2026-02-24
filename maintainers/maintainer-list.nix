@@ -3582,12 +3582,6 @@
     githubId = 124877155;
     name = "Benjamin Lemouzy";
   };
-  blenderfreaky = {
-    name = "blenderfreaky";
-    email = "nix@blenderfreaky.de";
-    github = "blenderfreaky";
-    githubId = 14351657;
-  };
   blghnks = {
     email = "bilgehankuch@gmail.com";
     name = "Bilgehan Kuş";
@@ -13920,6 +13914,12 @@
     github = "killercup";
     githubId = 20063;
     name = "Pascal Hertleif";
+  };
+  kilyanni = {
+    name = "Nikolas Kilian";
+    email = "nix@nkilian.org";
+    github = "kilyanni";
+    githubId = 14351657;
   };
   kim0 = {
     email = "email.ahmedkamal@googlemail.com";
