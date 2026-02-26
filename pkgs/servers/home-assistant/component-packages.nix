@@ -2291,7 +2291,8 @@
       ];
     "hanna" =
       ps: with ps; [
-      ]; # missing inputs: hanna-cloud
+        hanna-cloud
+      ];
     "hardkernel" =
       ps: with ps; [
         aiohasupervisor
