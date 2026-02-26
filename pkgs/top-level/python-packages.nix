@@ -20201,6 +20201,8 @@ self: super: with self; {
 
   uhi = callPackage ../development/python-modules/uhi { };
 
+  uhooapi = callPackage ../development/python-modules/uhooapi { };
+
   uiprotect = callPackage ../development/python-modules/uiprotect { };
 
   ujson = callPackage ../development/python-modules/ujson { };
