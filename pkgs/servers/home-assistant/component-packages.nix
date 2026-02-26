@@ -4388,8 +4388,9 @@
     "openevse" =
       ps: with ps; [
         ifaddr
+        python-openevse-http
         zeroconf
-      ]; # missing inputs: python-openevse-http
+      ];
     "openexchangerates" =
       ps: with ps; [
         aioopenexchangerates
@@ -7801,6 +7802,7 @@
     "openai_conversation"
     "openalpr_cloud"
     "openerz"
+    "openevse"
     "openexchangerates"
     "opengarage"
     "openhardwaremonitor"
