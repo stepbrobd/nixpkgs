@@ -6495,7 +6495,8 @@
       ];
     "uhoo" =
       ps: with ps; [
-      ]; # missing inputs: uhooapi
+        uhooapi
+      ];
     "uk_transport" =
       ps: with ps; [
       ];
@@ -8103,6 +8104,7 @@
     "twilio"
     "twinkly"
     "twitch"
+    "uhoo"
     "uk_transport"
     "ukraine_alarm"
     "unifi"
