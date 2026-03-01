@@ -385,6 +385,7 @@ let
     data_table = [ jbedo ];
     BiocManager = [ jbedo ];
     ggplot2 = [ jbedo ];
+    iscream = [ jamespeapen ];
     svaNUMT = [ jbedo ];
     svaRetro = [ jbedo ];
     StructuralVariantAnnotation = [ jbedo ];
