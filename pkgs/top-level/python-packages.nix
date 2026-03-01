@@ -15427,6 +15427,8 @@ self: super: with self; {
 
   python-clementine-remote = callPackage ../development/python-modules/python-clementine-remote { };
 
+  python-code-minimap = callPackage ../development/python-modules/python-code-minimap { };
+
   python-codon-tables = callPackage ../development/python-modules/python-codon-tables { };
 
   python-coinmarketcap = callPackage ../development/python-modules/python-coinmarketcap { };
